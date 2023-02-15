@@ -25,18 +25,11 @@ export default function Login() {
             body: JSON.stringify({email:credentials.email,password:credentials.password})
         });
         const json=await response.json();
-        // console.log(json.exist._id);
-        // const p=json.exist._id
-
-        // const name=json.exist.name;
         
-        // localStorage.setItem("user_id2",p)
-     
-        // localStorage.setItem("user_name",name)
-        // setExist(localStorage.getItem("user_id2"));
       
         if(json.success){
         //   await activeuser(p);
+        alert('user successfully login');
           navigate("/home")
         } 
         else{
