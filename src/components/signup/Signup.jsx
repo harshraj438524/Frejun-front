@@ -14,7 +14,7 @@ export default function Signup() {
     const handleSubmit=async (e)=>{
       e.preventDefault();
       console.log("ruko dekhteh haiemail password sahi ai")
-      const response = await fetch('http://localhost:8000/api/auths/register', {
+      const response = await fetch('https://frejun-backends.onrender.com/api/auths/register', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

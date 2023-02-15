@@ -13,7 +13,7 @@ export default function Login() {
         e.preventDefault(); 
         
         console.log("ruko dekhteh haiemail password sahi ai")
-        const response = await fetch('http://localhost:8000/api/auths/login', {
+        const response = await fetch('https://frejun-backends.onrender.com/api/auths/login', {
             method: 'POST',
             headers: {
     
